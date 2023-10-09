@@ -4,6 +4,7 @@
     <title>
         My Portfolio
     </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
@@ -13,14 +14,16 @@
 
 <body>
    
-
-    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+ <section class="home">
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" id="mySidebar">
         <img src="img/download.png" style="height: 50px; width: 50px;"> <button class="w3-bar-item w3-button w3-large"
         onclick="w3_close()">Close &times; </button>
         <button id="toggleMode">Mode</button>
-        <a href="#about" class="w3-bar-item w3-button">About</a>
-        <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        <ul class="nav-links">
+        <li><a href="#about" class="w3-bar-item w3-button">About</a></li>
+        <li><a href="#projects" class="w3-bar-item w3-button">Projects</a></li>
+        <li><a href="#contact" class="w3-bar-item w3-button">Contact</a></li>
+        </ul>
       </div>
       
 <div id="main">
@@ -28,7 +31,7 @@
    <section>  
   <div class="navbar">
     <div class="w3">
-      <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+      <button id="openNav" class="w3-button w3-x" onclick="w3_open()">&#9776;</button>
     </div>
    <div class="logo">JHE</div>
      <ol class="menuitems">
@@ -45,17 +48,17 @@
         <h1> Hi there, I'm</h1>
         <h2>Jherald Ballena</h2> <br>
         <h5>Your Software Developer</h5>
-        <a href="./pdf/Ballena, Jherald -Resume.pdf" class="btn"> DOWNLOAD MY RESUME</a>
+        <a href="/pdf/Ballena, Jherald -Resume.pdf" class="btn"> DOWNLOAD MY RESUME</a>
      </div>
   </div>
 
 <div class="image_container">
   <div class="imgbox">
-    <img src="./img/prog.png" alt="user pic">
+    <img src="/img/prog.png" alt="user pic">
   </div>
   <span class="animblob"></span>
 </div> 
-
+</section>
 <div class="icons">
   <a class="fa fa-instagram" href="https://instagram.com/dlar_jhe?igshid=MzMyNGUyNmU2YQ==" target="_blank"><span>Insta</span></a><br>
   <a class="fa fa-facebook" href="https://www.facebook.com/jherald814?mibextid=ZbWKwL" target="_blank"><span>Facebook</span></a><br>
@@ -98,7 +101,7 @@
     <section id="about">
       <h1 class="headings">ABOUT ME</h1>
         <div id="pic">
-          <img src="./img/jhe1.jpg" alt="">
+          <img src="/img/jhe1.jpg" alt="">
         <div id="intro">
           <h2>Jherald M. Ballena</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -109,10 +112,10 @@
     <section id="projects">
       <h1 class="headings">MY PROJECTS</h1>
       <div class="gallery">
-        <img src="./img/sunset1.jpg" alt="">
-        <img src="./img/sunset2.jpg" alt="">
-        <img src="./img/sunset3.jpg" alt="">
-        <img src="./img/sunset1.jpg" alt="">
+        <img src="/img/sunset1.jpg" alt="">
+        <img src="/img/sunset2.jpg" alt="">
+        <img src="/img/sunset3.jpg" alt="">
+        <img src="/img/sunset1.jpg" alt="">
       </div>
 
     </section>
