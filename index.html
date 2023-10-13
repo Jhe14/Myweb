@@ -14,24 +14,15 @@
 
 <body>
    
- <section class="home">
-    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" id="mySidebar">
-        <img src="img/download.png" style="height: 50px; width: 50px;"> <button class="w3-bar-item w3-button w3-large"
-        onclick="w3_close()">Close &times; </button>
-        <button id="toggleMode">Mode</button>
-        <ul class="nav-links">
-        <li><a href="#about" class="w3-bar-item w3-button">About</a></li>
-        <li><a href="#projects" class="w3-bar-item w3-button">Projects</a></li>
-        <li><a href="#contact" class="w3-bar-item w3-button">Contact</a></li>
-        </ul>
-      </div>
-      
+ <section id="home">
+  
 <div id="main">
+
   <input type="checkbox" id="check">
    <section>  
   <div class="navbar">
     <div class="w3">
-      <button id="openNav" class="w3-button w3-x" onclick="w3_open()">&#9776;</button>
+      <button id="toggleMode">Mode</button>
     </div>
    <div class="logo">JHE</div>
      <ol class="menuitems">
@@ -40,10 +31,11 @@
         <li><a href="#projects"> Projects</a></li>
         <li><a href="#"> Contact</a></li>
      </ol>
-     <label for="check" class="fa fa bars"></label>
+     
   </div>
 
-  <div clss="container">
+<class class="row">
+  <div clss="col-1">
      <div class="text_container">
         <h1> Hi there, I'm</h1>
         <h2>Jherald Ballena</h2> <br>
@@ -52,12 +44,13 @@
      </div>
   </div>
 
-<div class="image_container">
+<div class="col-2">
   <div class="imgbox">
     <img src="./img/prog.png" alt="user pic">
   </div>
   <span class="animblob"></span>
 </div> 
+</div>
 </section>
 <div class="icons">
   <a class="fa fa-instagram" href="https://instagram.com/dlar_jhe?igshid=MzMyNGUyNmU2YQ==" target="_blank"><span>Insta</span></a><br>
@@ -66,7 +59,7 @@
 </div>
      
     </section>  
-      <!-- 
+      <!-- Slideshow
       <div class="slideshow-container">
      <div class="mySlides fade">
       <div class="container">Hi I'm Jherald M. Ballena, your Software Developer</div>
@@ -99,24 +92,68 @@
         
 
     <section id="about">
+      
       <h1 class="headings">ABOUT ME</h1>
         <div id="pic">
           <img src="./img/jhe1.jpg" alt="">
         <div id="intro">
           <h2>Jherald M. Ballena</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        </div>
-    </section>
+          <p>I have recently completed a Bachelor of Science in Computer Engineering at Polytechnic University of the Philippines. I have passion for all things in technology and design, fro software engineering to UI/UX. </p>
+               
+          <div class="work1">
+            <div class="experience">Experience</div>
 
+               <h2><i class="fa fa-briefcase"></i>Project SAFER</h2><br>
+                  <p2>August 2023 - October 2023</p2><br>
+                    <h3>Position: <p2>Project Manager</p2></h3> 
+                      <h3>Responsibilities</h3><p2>Collaborate with the members </p2>
+
+             <h2><i class="fa fa-briefcase"></i>Smart Traffic</h2><br>
+             <p2>September 2021 - November 2021</p2><br>
+             <h3>Position: <p2>Project Manager</p2></h3> 
+             <h3>Responsibilities</h3><p2>Collaborate with the members </p2>
+
+          </div>
+
+        </div>
+        </div>
+      
+    </section>
+  </div>
     <section id="projects">
       <h1 class="headings">MY PROJECTS</h1>
-      <div class="gallery">
-        <img src="./img/sunset1.jpg" alt="">
-        <img src="./img/sunset2.jpg" alt="">
-        <img src="./img/sunset3.jpg" alt="">
-        <img src="./img/sunset1.jpg" alt="">
-      </div>
+      <div class="slide-container">
+        <div class="card">
+          <div class="image">
+            <img src="./img/sunset1.jpg" alt="" class="card-image">
+          </div>
+          <h4>Project SAFER</h4>
+          <p>Safety Awareness for Each Resident</p>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="./img/sunset1.jpg" alt="" class="card-image">
+            </div>
+            <h4>Iknow</h4>
+            <p>CCTV Surveilance</p>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="./img/sunset1.jpg" alt="" class="card-image">
+              </div>
+              <h4>QR Code-Based Document Viewer </h4>
+              <p>Research, Engineering Books with QR Code Scanner</p></p>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="./img/sunset1.jpg" alt="" class="card-image">
+                </div>
+                <h4>Project SAFER</h4>
+                <p>Safety Awareness for Each Resident</p>
+                </div>
+        </div>
+       </div>
+         
 
     </section>
 
